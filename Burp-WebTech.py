@@ -17,7 +17,7 @@ class BurpExtender(IBurpExtender, IScannerCheck, IScanIssue, ITab):
         self.helpers = callbacks.getHelpers()
         callbacks.setExtensionName("WebTech")
         self.out = callbacks.getStdout()
-        self.callbacks.printOutput("Sucessfully loaded WebTech {}".format(VERSION))
+        self.callbacks.printOutput("Successfully loaded WebTech {}".format(VERSION))
 
         self.webtech = WebTech(options={'json': True})
 
